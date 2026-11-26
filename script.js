@@ -1,7 +1,7 @@
 // RIVALS AI website settings
 // 1) Paste your public demo video URL between the quotes below.
 // 2) Add your Formspree form endpoint below to enable public feedback submissions.
-const DEMO_VIDEO_URL = "";
+const DEMO_VIDEO_URL = "https://drive.google.com/file/d/1lH7JdqYe3bMHe1IECnia3NbgyeT7LIJo/view?usp=drive_link";
 const FORMSPREE_ENDPOINT = ""; // Example format: https://formspree.io/f/xxxxxxxx
 
 document.getElementById("year").textContent = new Date().getFullYear();
