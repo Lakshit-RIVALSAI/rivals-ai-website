@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f5fbff">
+  <meta name="description" content="RIVALS AI is an experimental gameplay assistant project featuring screen vision, OCR and AI-assisted insights.">
+  <title>RIVALS AI | Your Gameplay Assistant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="RIVALS AI home">
+      <span class="brand-mark">R</span>
+      <span>RIVALS <b>AI</b></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav id="mainNav">
+      <a href="#about">About</a>
+      <a href="#features">Features</a>
+      <a href="#technology">Technology</a>
+      <a href="#demo">Demo</a>
+      <a class="nav-cta" href="#review">Review the project</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> AN AI-ASSISTED GAMEPLAY PROJECT</div>
+        <h1>PLAY YOUR GAME.<br><span>THINK WITH AI.</span></h1>
+        <p class="hero-lead">Meet RIVALS AI — an experimental assistant designed to analyse on-screen gameplay information and provide useful insights while <strong>you stay in control.</strong></p>
+        <div class="hero-actions">
+          <a class="button primary" href="#demo">Explore the demo <span>↗</span></a>
+          <a class="button secondary" href="#features">Discover features</a>
+        </div>
+        <p class="hero-note">ASSIST • ANALYSE • ENHANCE</p>
+      </div>
+      <div class="hero-art" aria-label="RIVALS AI interface illustration">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="ai-window">
+          <div class="window-top"><span></span><span></span><span></span><label>RIVALS AI / COMMAND CENTRE</label></div>
+          <div class="window-content">
+            <div class="scan-icon">⌖</div>
+            <div class="window-title">SCREEN ANALYSIS</div>
+            <div class="scan-line"></div>
+            <div class="metric-row"><span>VISION STATUS</span><b class="status">● READY</b></div>
+            <div class="metric-row"><span>TEXT RECOGNITION</span><b>OCR</b></div>
+            <div class="metric-row"><span>PLAYER CONTROL</span><b>YOU</b></div>
+            <div class="window-footer">YOUR GAME. YOUR DECISIONS.</div>
+          </div>
+        </div>
+        <div class="floating-chip chip-top">LIVE VISION</div>
+        <div class="floating-chip chip-bottom">AI INSIGHTS</div>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div><strong>01</strong><span>OBSERVE</span></div><i></i>
+      <div><strong>02</strong><span>ANALYSE</span></div><i></i>
+      <div><strong>03</strong><span>ASSIST</span></div>
+    </section>
+
+    <section class="section-wrap section" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">THE PROJECT</p>
+        <h2>What is <span>RIVALS AI?</span></h2>
+      </div>
+      <div class="about-grid">
+        <p class="large-copy">RIVALS AI is a computer-vision and screen-analysis project built to help players understand useful information displayed during gameplay.</p>
+        <div class="about-card">
+          <div class="card-icon">✳</div>
+          <h3>Assistant, not autopilot.</h3>
+          <p>RIVALS AI is designed to support the player's awareness and decision-making. It does not play the game or make gameplay decisions for the user.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section features-section" id="features">
+      <div class="section-wrap">
+        <div class="section-heading centered">
+          <p class="eyebrow">WHAT IT CAN DO</p>
+          <h2>Built to <span>assist.</span></h2>
+          <p class="section-intro">The project brings multiple analysis tools together in one desktop dashboard.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card"><div class="feature-icon">◉</div><p class="feature-number">01 / VISION</p><h3>Live Vision</h3><p>Uses computer-vision models to inspect captured screen frames and attempt to identify relevant visual information.</p></article>
+          <article class="feature-card"><div class="feature-icon">T</div><p class="feature-number">02 / TEXT</p><h3>OCR Support</h3><p>Reads visible on-screen text, such as interface labels and other readable game information.</p></article>
+          <article class="feature-card"><div class="feature-icon">⌁</div><p class="feature-number">03 / INSIGHTS</p><h3>AI Insights</h3><p>Brings screen-analysis information into a dashboard so the player can review it and make their own decisions.</p></article>
+          <article class="feature-card"><div class="feature-icon">▤</div><p class="feature-number">04 / DASHBOARD</p><h3>One Command Centre</h3><p>A desktop interface for viewing the project’s vision preview, OCR output, status and analysis panels.</p></article>
+        </div>
+        <p class="accuracy-note"><strong>Development note:</strong> This is an experimental prototype. Detection quality and feature availability can vary by game scene and system performance. Only features demonstrated in the current build should be treated as working.</p>
+      </div>
+    </section>
+
+    <section class="section section-wrap" id="technology">
+      <div class="section-heading">
+        <p class="eyebrow">UNDER THE HOOD</p>
+        <h2>Technology that <span>powers the project.</span></h2>
+        <p class="section-intro">RIVALS AI combines Python tools for screen capture, computer vision, text recognition and its desktop interface.</p>
+      </div>
+      <div class="tech-list">
+        <div><b>Python</b><span>Core programming language</span></div>
+        <div><b>Ultralytics YOLO</b><span>Object-detection framework</span></div>
+        <div><b>OpenCV</b><span>Image and frame processing</span></div>
+        <div><b>RapidOCR</b><span>On-screen text recognition</span></div>
+        <div><b>PySide6</b><span>Desktop dashboard interface</span></div>
+        <div><b>MSS</b><span>Screen capture</span></div>
+      </div>
+    </section>
+
+    <section class="section demo-section" id="demo">
+      <div class="section-wrap">
+        <div class="section-heading centered">
+          <p class="eyebrow">SEE IT IN ACTION</p>
+          <h2>Project <span>demo.</span></h2>
+          <p class="section-intro">Watch the actual RIVALS AI dashboard and see the features that are currently implemented.</p>
+        </div>
+        <div class="demo-grid">
+          <div class="demo-screen">
+            <div class="demo-placeholder">
+              <div class="play-symbol">▶</div>
+              <h3>Your RIVALS AI demo goes here</h3>
+              <p>Replace this panel with your demo video link or a screenshot of the real dashboard.</p>
+            </div>
+          </div>
+          <div class="demo-info">
+            <span class="tag">DEMONSTRATION</span>
+            <h3>From screen capture to useful information.</h3>
+            <ol>
+              <li><span>1</span> Open the RIVALS AI desktop application.</li>
+              <li><span>2</span> Show the live vision preview.</li>
+              <li><span>3</span> Demonstrate OCR reading visible text.</li>
+              <li><span>4</span> Explore the AI Insights and status panels.</li>
+            </ol>
+            <p class="small-note">A recorded demonstration is recommended for exhibition visitors. It avoids relying on a live game connection or unpredictable network conditions.</p>
+          </div>
+        </div>
+        <div class="demo-links">
+          <a class="button primary" id="videoLink" href="#" target="_blank" rel="noopener">Watch demonstration ↗</a>
+          <span id="videoHint">Add your YouTube or other public video link in script.js.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-wrap review-section" id="review">
+      <div class="review-intro">
+        <p class="eyebrow">YOUR FEEDBACK MATTERS</p>
+        <h2>Review <span>RIVALS AI.</span></h2>
+        <p>You've seen the idea and the demo. Share what you think, what worked well and what could be improved.</p>
+        <div class="review-points"><span>✓ Help improve the project</span><span>✓ Share feature suggestions</span><span>✓ No account needed through the feedback form</span></div>
+      </div>
+      <form class="review-form" id="reviewForm">
+        <h3>Visitor feedback</h3>
+        <label for="rating">How would you rate the project?</label>
+        <div class="rating-picker" role="radiogroup" aria-label="Project rating">
+          <input type="radio" name="rating" id="r1" value="1" required><label for="r1">1</label>
+          <input type="radio" name="rating" id="r2" value="2"><label for="r2">2</label>
+          <input type="radio" name="rating" id="r3" value="3"><label for="r3">3</label>
+          <input type="radio" name="rating" id="r4" value="4"><label for="r4">4</label>
+          <input type="radio" name="rating" id="r5" value="5"><label for="r5">5</label>
+        </div>
+        <label for="visitorRole">You are visiting as</label>
+        <select id="visitorRole" name="visitorRole">
+          <option>Student</option><option>Teacher</option><option>Visitor</option><option>Other</option>
+        </select>
+        <label for="feedback">Your comments or suggestions</label>
+        <textarea id="feedback" name="feedback" rows="4" maxlength="1000" placeholder="What did you think? What should be improved?" required></textarea>
+        <button class="button primary submit-button" type="submit">Send feedback ↗</button>
+        <p class="form-message" id="formMessage" aria-live="polite">Feedback submission will be enabled after you connect a form service. See SETUP.md.</p>
+        <p class="privacy-note">Please do not include private information in your feedback.</p>
+      </form>
+    </section>
+
+    <section class="closing-cta">
+      <div class="section-wrap closing-inner">
+        <p class="eyebrow">THE RIVALS AI IDEA</p>
+        <h2>YOU PLAY.<br><span>WE ANALYSE.</span></h2>
+        <p>Smarter assistance. Player-controlled gameplay.</p>
+        <a class="button white-button" href="#home">Back to top ↑</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand" href="#home"><span class="brand-mark">R</span><span>RIVALS <b>AI</b></span></a>
+    <p>An experimental AI-assisted gameplay project. Built to assist, not to play for you.</p>
+    <span>© <span id="year"></span> RIVALS AI Project</span>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
