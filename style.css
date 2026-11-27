@@ -122,6 +122,36 @@ body.dark-mode .hero-art {
   background: radial-gradient(ellipse, #12344B 0, #0D1726 45%, transparent 72%);
 }
 
+/* DARK MODE TOGGLE BUTTON */
+.theme-toggle {
+  border: 1px solid #c8ddec;
+  background: #e6f6ff;
+  color: #087db7;
+  padding: 9px 13px;
+  border-radius: 9px;
+  font-size: 12px;
+  font-weight: 800;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.theme-toggle:hover {
+  background: #d5efff;
+}
+
+body.dark-mode .theme-toggle {
+  background: #17263A;
+  color: #7DD3FC;
+  border-color: #344B66;
+}
+
+@media (max-width: 650px) {
+  .theme-toggle {
+    margin-left: auto;
+    margin-right: 10px;
+  }
+}
+
 body.dark-mode .ai-window {
   box-shadow: 0 24px 60px #00000050;
 }
